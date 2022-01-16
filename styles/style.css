@@ -24,9 +24,34 @@ button{
     font-weight: bold;
     font-size: 16px;
     color: #FFFFFF;
+    margin-top: 16px;
 }
 hr{
     border: 1px solid black;
+}
+/*----------------------------
+     head section 
+-----------------------------*/
+header{
+    display: flex;
+    justify-content: center;
+}
+.head-section{
+    display: flex;
+    justify-content: space-between;
+    width: 1110px;
+
+}
+nav ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 30px;
+}
+nav li a{
+    text-decoration: none;
+    color: #3A3A3A;
 }
 
 /*-------------------------------
@@ -35,6 +60,7 @@ hr{
 .initialization-of-journey{
     display: flex;
     align-items: center;
+    margin-bottom: 50px;
 }
 .initialization-text{
     width: 582px;
@@ -71,24 +97,32 @@ button .fa-plus{
 /*-----------------------------
      Popular Collection  
 ------------------------------*/
+.products{
+    position: relative;
+    margin-bottom: 50px;
+}
 .container>h2{
     text-align: center;
+    margin-bottom: 30px;
 }
-.popular-collection{
+.product{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 100px;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 25px;
 }
 .individual-collection{
     height: 476;
     width: 329;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-    padding-left: 10px;
+    padding: 10px;
+}
+.individual-collection>.individual-collection-image>img{
+    width: 100%;
 }
 .individual-collection-discreption>h3{
     margin: 10px 0px;
 }
-.individual-collection-discreption>h4{
+.individual-collection-discreption>h4, p {
     margin: 0px 0px;
 }
 .fa-star{
@@ -101,8 +135,9 @@ button .fa-plus{
     color: #AEAEAE;
 }
 .see-more p{
-    position: relative;
-    left: 100%;
+    position: absolute;
+    right: 0px;
+    margin-top: 47px;
 }
 .see-more p a{
     color: #E02C6D;
@@ -114,6 +149,7 @@ button .fa-plus{
 ----------------------------*/
 .featured-products{
     display: flex;
+    align-items: center;
     margin: 100px 0px;
 }
 .featured-product-image{
