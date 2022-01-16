@@ -27,7 +27,7 @@ button{
     margin-top: 16px;
 }
 hr{
-    border: 1px solid black;
+    border: 1px dotted lightslategray;
 }
 /*----------------------------
      head section 
@@ -39,6 +39,7 @@ header{
 .head-section{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 1110px;
 
 }
@@ -79,9 +80,6 @@ nav li a{
     width: 440px;
     height: 414px;
 }
-button .fa-plus{
-    padding-left: 5px;
-}
 
 /*----------------------------
        ecommerce-websites  
@@ -104,6 +102,7 @@ button .fa-plus{
 .container>h2{
     text-align: center;
     margin-bottom: 30px;
+    margin-top: 70px;
 }
 .product{
     display: grid;
@@ -182,6 +181,6 @@ button .fa-plus{
 .footer>p{
     margin-top: 0px;
 }
-.fab, .fas{
+.footer>.social-media-link>i{
     margin-left: 10px;
 }
