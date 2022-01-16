@@ -173,7 +173,6 @@ nav li a{
     color: white;
     text-align: center;
     background-color: black;
-    padding: 50px 0px;
 }
 .footer>h3{
     margin-bottom: 0px;
@@ -183,4 +182,208 @@ nav li a{
 }
 .footer>.social-media-link>i{
     margin-left: 10px;
+}
+
+/*-------------------------
+       Media Query
+--------------------------*/
+
+/* Mobile Devices  */
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 380px;
+    }
+    /*----------------------------
+     head section 
+    -----------------------------*/
+    body{
+        width: 90%;
+    }
+    .head-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 35px;
+    }
+    .head-section>div>h1{
+        font-size: 16px;
+    }
+    nav li{
+        margin-right: 10px;
+    }
+    /*-------------------------------
+       initialization-of-journey  
+    -------------------------------*/
+    .initialization-of-journey{
+        flex-direction: column;
+        width: 90%;
+        padding: 20px;
+        margin-left: 73px;
+        margin-right: 0px;
+    }
+    .initialization-text{
+        order: 2;
+        text-align: center;
+        width: 350px;
+        margin-top: 15px;
+    }
+    .initialization-text > h1{
+        font-size: 22px;
+    }
+    .initialization-image{ 
+        order: 1;
+        width: 202px;
+        height: 190px;
+        margin-left: -120px;
+        margin-bottom: 14px;
+    }
+    .initialization-image>img{
+        width: 100%;
+    }
+    /*----------------------------
+       ecommerce-websites  
+-----------------------------*/
+    .ecommerce-website-images{
+        padding-left: 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-self: center;
+    }
+    .ecommerce-website-images > img{
+        width: 22px;
+        height: 11px;
+    }
+    /*-----------------------------
+     Popular Collection  
+    ------------------------------*/
+    
+    .product{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 25px;
+        align-items: center;
+        
+    }
+    .popular-collection{
+        width: 300px;
+        margin-left: 25px;
+    }
+    .see-more p{
+        position: absolute;
+        right: 10px;
+        margin-top: 47px;
+    }
+    /*---------------------------
+       featured-products  
+    ----------------------------*/
+    .featured-products{
+        flex-direction: column;
+        margin: 50px 0px;
+    }
+    .featured-product-image{
+        order: 2;
+    }
+    .featured-product-image>img{
+        width: 329px;
+        height: 476;
+        margin-top: 30px;
+    }
+    .featured-product-discription{
+        order: 1;
+        width: 80%;
+        margin-left: 30px;
+    }
+}
+
+/* Tablet devices  */
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+    header{
+        width: 700px;
+        margin-left: 50px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 50px;
+    }
+    .container{
+        width: 800px;
+    }
+    /*----------------------------
+     head section 
+    -----------------------------*/
+    .head-section{
+        justify-content: space-between;
+    }
+    .head-section nav{
+        margin-left: 0px;
+    }
+    /*-------------------------------
+        initialization-of-journey  
+    -------------------------------*/
+    .initialization-of-journey{
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+    .initialization-text{
+        width: 50%;
+        margin-left: 50px;
+        margin-right: 10px;
+    }
+    .initialization-image{
+        width: 50%;
+    }
+    .initialization-image img{
+        width: 75%;
+        margin-top: 50px;
+    }
+    .initialization-text h1{
+        font-size: 2em;
+    }
+    /*----------------------------
+       ecommerce-websites  
+    -----------------------------*/
+    .ecommerce-websites{
+        width: 800px;
+    }
+   .ecommerce-website-images{
+        margin-left: 20px;
+        padding-left: 100px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-row-gap: 30px;
+        padding-left: 0px;
+    }
+    /*-----------------------------
+          Popular Collection  
+    ------------------------------*/
+    .product{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+    .see-more p{
+        position: absolute;
+        right: 50px;
+        margin-top: 47px;
+    }
+    /*---------------------------
+       featured-products  
+    ----------------------------*/
+    .featured-product-image{
+        width: 370px;
+        height: auto;
+    }
+    .featured-product-image>img{
+        width: 100%;
+    }
+    .featured-product-discription{
+        width: 40%;
+        margin-left: 30px;
+    }
+    .featured-product-discription>h2{
+        text-align: center;
+    }
 }
